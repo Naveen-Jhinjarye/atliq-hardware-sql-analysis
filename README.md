@@ -26,4 +26,4 @@ WHERE customer = "Atliq Exclusive"
 
 
 
-![Query Result Screenshot] https://github.com/Naveen-Jhinjarye/atliq-hardware-sql-analysis/blob/main/asssts/Screenshot%20(739).png
+![Query Result Screenshot]_(https://github.com/Naveen-Jhinjarye/atliq-hardware-sql-analysis/blob/main/asssts/Screenshot%20(739).png)
