@@ -24,11 +24,6 @@ WHERE customer = "Atliq Exclusive"
   AND region   = "APAC";
 ```
 
-```sql
-SELECT DISTINCT market
-FROM dim_customer
-WHERE customer = 'Atliq Exclusive'
-  AND region = 'APAC';
-```
 
-![Query Result Screenshot](asssts/Screenshot(739).png)
+
+![Query Result Screenshot] https://github.com/Naveen-Jhinjarye/atliq-hardware-sql-analysis/blob/main/asssts/Screenshot%20(739).png
