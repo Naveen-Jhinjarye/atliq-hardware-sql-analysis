@@ -17,8 +17,9 @@ TableDescriptiondim_customerCustomer details — name, market, region, channeldi
 
 #### ✅ Request 1
 #### Provide the list of markets in which customer "Atliq Exclusive" operates its business in the APAC region.
-
+``` SQL
 SELECT DISTINCT market
 FROM dim_customer
 WHERE customer = "Atliq Exclusive"
   AND region   = "APAC";
+```
