@@ -31,4 +31,4 @@ WHERE customer = 'Atliq Exclusive'
   AND region = 'APAC';
 ```
 
-![Query Result Screenshot](assets/screenshot(739).png)
+![Query Result Screenshot](asssts/Screenshot(739).png)
