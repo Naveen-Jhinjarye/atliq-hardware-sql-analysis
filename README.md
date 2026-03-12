@@ -23,3 +23,12 @@ FROM dim_customer
 WHERE customer = "Atliq Exclusive"
   AND region   = "APAC";
 ```
+
+```sql
+SELECT DISTINCT market
+FROM dim_customer
+WHERE customer = 'Atliq Exclusive'
+  AND region = 'APAC';
+```
+
+![Query Result Screenshot](assets/screenshot(739).png)
