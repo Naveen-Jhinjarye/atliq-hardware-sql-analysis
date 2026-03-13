@@ -30,8 +30,7 @@ WHERE customer = "Atliq Exclusive"
 
 #### ✅ Request 2
 #### What is the percentage of unique product increase in 2021 vs 2020?
-#### SQL
-```
+``` SQL
 WITH unique_product_table AS (
     SELECT
         COUNT(CASE WHEN fiscal_year = '2020' THEN product END) AS unique_product_2020,
@@ -50,8 +49,7 @@ Show Image
 
 #### ✅ Request 3
 #### Provide a report with all the unique product counts for each segment, sorted in descending order.
-#### SQL
-```
+``` SQL
 SELECT
     segment,
     COUNT(product) AS product_count
@@ -62,7 +60,7 @@ ORDER BY product_count DESC;
 Show Image
 
 #### ✅ Request 4
-#### Which segment had the most increase in unique products in 2021 vs 2020?
+#### Get the products with the highest and lowest manufacturing costs.
 ``` SQL
 WITH uni_pro_tab AS (
     SELECT
@@ -221,3 +219,5 @@ Conditional Aggregation — CASE WHEN inside aggregate functions
 Subqueries — For filtering with MIN / MAX / AVG
 Multi-table JOINs — Across fact and dimension tables
 Date Functions — MONTHNAME(), QUARTER(), DATE_ADD()
+
+
