@@ -56,11 +56,12 @@ SELECT
 FROM dim_product
 GROUP BY segment
 ORDER BY product_count DESC;
-📊 Result:
+```
+#### 📊 Result:
 Show Image
 
 #### ✅ Request 4
-#### Get the products with the highest and lowest manufacturing costs.
+#### Which segment had the most increase in unique products in 2021 vs 2020?
 ``` SQL
 WITH uni_pro_tab AS (
     SELECT
@@ -153,7 +154,6 @@ Show Image
 
 #### ✅ Request 9
 #### Which channel contributed the most to gross sales in FY2021 and what was its percentage?
-#### SQL
 ``` SQL
 WITH gross_table AS (
     SELECT
@@ -178,7 +178,6 @@ Show Image
 
 #### ✅ Request 10
 #### Get the Top 3 products in each division by total sold quantity in FY2021.
-#### SQL
 ``` SQL
 WITH product_totals AS (
     SELECT
