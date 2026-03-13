@@ -30,8 +30,7 @@ WHERE customer = "Atliq Exclusive"
 
 #### ✅ Request 2
 #### What is the percentage of unique product increase in 2021 vs 2020?
-#### SQL
-```
+``` SQL
 WITH unique_product_table AS (
     SELECT
         COUNT(CASE WHEN fiscal_year = '2020' THEN product END) AS unique_product_2020,
@@ -58,7 +57,7 @@ SELECT
 FROM dim_product
 GROUP BY segment
 ORDER BY product_count DESC;
-📊 Result:
+#### 📊 Result:
 Show Image
 
 #### ✅ Request 4
