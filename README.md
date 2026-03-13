@@ -61,9 +61,10 @@ ORDER BY product_count DESC;
 📊 Result:
 Show Image
 
-✅ Request 4
-Which segment had the most increase in unique products in 2021 vs 2020?
-sqlWITH uni_pro_tab AS (
+#### ✅ Request 4
+#### Which segment had the most increase in unique products in 2021 vs 2020?
+``` SQL
+WITH uni_pro_tab AS (
     SELECT
         segment,
         COUNT(CASE WHEN fiscal_year = '2020' THEN product END) AS unique_product_2020,
@@ -82,8 +83,7 @@ Show Image
 
 #### ✅ Request 5
 #### Get the products with the highest and lowest manufacturing costs.
-#### SQL
-```
+``` SQL
 SELECT
     p.product_code,
     p.product,
@@ -100,8 +100,7 @@ Show Image
 
 #### ✅ Request 6
 #### Top 5 customers with the highest average pre-invoice discount in the Indian market for FY2021.
-#### SQL
-```
+``` SQL
 SELECT
     c.customer_code,
     c.customer,
@@ -122,8 +121,7 @@ Show Image
 
 #### ✅ Request 7
 #### Complete monthly Gross Sales report for customer "Atliq Exclusive".
-#### SQL
-```
+``` SQL
 SELECT
     MONTHNAME(DATE_ADD(m.date, INTERVAL 4 MONTH)) AS month_name,
     m.fiscal_year                                  AS year,
@@ -143,8 +141,7 @@ Show Image
 
 #### ✅ Request 8
 #### In which quarter of 2020 was the total sold quantity the highest?
-#### SQL
-```
+``` SQL
 SELECT
     CONCAT("Q", QUARTER(DATE_ADD(date, INTERVAL 4 MONTH))) AS quarter,
     ROUND(SUM(sold_quantity) / 1000000, 2)                 AS total_sold_quantity
@@ -159,7 +156,7 @@ Show Image
 #### ✅ Request 9
 #### Which channel contributed the most to gross sales in FY2021 and what was its percentage?
 #### SQL
-```
+``` SQL
 WITH gross_table AS (
     SELECT
         c.channel,
@@ -184,7 +181,7 @@ Show Image
 #### ✅ Request 10
 #### Get the Top 3 products in each division by total sold quantity in FY2021.
 #### SQL
-```
+``` SQL
 WITH product_totals AS (
     SELECT
         p.division,
