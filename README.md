@@ -156,7 +156,7 @@ GROUP BY quarter
 ORDER BY total_sold_quantity DESC;
 ```
 #### 📊 Result:
-![Query Result Screenshot](https://github.com/Naveen-Jhinjarye/atliq-hardware-sql-analysis/blob/main/asssts/Screenshot%20(746).png)
+![Query Result Screenshot](https://github.com/Naveen-Jhinjarye/atliq-hardware-sql-analysis/blob/main/asssts/Screenshot%20(749)2.png)
 
 
 #### ✅ Request 9
