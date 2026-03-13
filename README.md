@@ -45,7 +45,8 @@ SELECT *,
 FROM unique_product_table;
 ```
 #### 📊 Result:
-Show Image
+![Query Result Screenshot](https://github.com/Naveen-Jhinjarye/atliq-hardware-sql-analysis/blob/main/asssts/Screenshot%20(740).png)
+
 
 #### ✅ Request 3
 #### Provide a report with all the unique product counts for each segment, sorted in descending order.
@@ -58,7 +59,8 @@ GROUP BY segment
 ORDER BY product_count DESC;
 ```
 #### 📊 Result:
-Show Image
+![Query Result Screenshot](https://github.com/Naveen-Jhinjarye/atliq-hardware-sql-analysis/blob/main/asssts/Screenshot%20(741).png)
+
 
 #### ✅ Request 4
 #### Which segment had the most increase in unique products in 2021 vs 2020?
@@ -78,7 +80,8 @@ FROM uni_pro_tab
 ORDER BY difference DESC;
 ```
 #### 📊 Result:
-Show Image
+![Query Result Screenshot](https://github.com/Naveen-Jhinjarye/atliq-hardware-sql-analysis/blob/main/asssts/Screenshot%20(742).png)
+
 
 #### ✅ Request 5
 #### Get the products with the highest and lowest manufacturing costs.
@@ -95,7 +98,8 @@ WHERE manufacturing_cost IN (
 );
 ```
 #### 📊 Result:
-Show Image
+![Query Result Screenshot](https://github.com/Naveen-Jhinjarye/atliq-hardware-sql-analysis/blob/main/asssts/Screenshot%20(743).png)
+
 
 #### ✅ Request 6
 #### Top 5 customers with the highest average pre-invoice discount in the Indian market for FY2021.
@@ -116,7 +120,8 @@ ORDER BY average_discount_percentage DESC
 LIMIT 5;
 ```
 #### 📊 Result:
-Show Image
+![Query Result Screenshot](https://github.com/Naveen-Jhinjarye/atliq-hardware-sql-analysis/blob/main/asssts/Screenshot%20(744).png)
+
 
 #### ✅ Request 7
 #### Complete monthly Gross Sales report for customer "Atliq Exclusive".
@@ -136,7 +141,8 @@ GROUP BY year, MONTH(m.date)
 ORDER BY year, MONTH(m.date);
 ```
 #### 📊 Result:
-Show Image
+![Query Result Screenshot](https://github.com/Naveen-Jhinjarye/atliq-hardware-sql-analysis/blob/main/asssts/Screenshot%20(745).png)
+
 
 #### ✅ Request 8
 #### In which quarter of 2020 was the total sold quantity the highest?
@@ -150,7 +156,8 @@ GROUP BY quarter
 ORDER BY total_sold_quantity DESC;
 ```
 #### 📊 Result:
-Show Image
+![Query Result Screenshot](https://github.com/Naveen-Jhinjarye/atliq-hardware-sql-analysis/blob/main/asssts/Screenshot%20(746).png)
+
 
 #### ✅ Request 9
 #### Which channel contributed the most to gross sales in FY2021 and what was its percentage?
@@ -174,7 +181,8 @@ FROM gross_table
 ORDER BY gross_sales_mln DESC;
 ```
 #### 📊 Result:
-Show Image
+![Query Result Screenshot](https://github.com/Naveen-Jhinjarye/atliq-hardware-sql-analysis/blob/main/asssts/Screenshot%20(747).png)
+
 
 #### ✅ Request 10
 #### Get the Top 3 products in each division by total sold quantity in FY2021.
@@ -207,16 +215,23 @@ FROM ranked_products
 WHERE rank_order <= 3;
 ```
 #### 📊 Result:
-Show Image
+![Query Result Screenshot](https://github.com/Naveen-Jhinjarye/atliq-hardware-sql-analysis/blob/main/asssts/Screenshot%20(748).png)
+
 
 ## 🧠 SQL Concepts Used
 
 CTEs — Common Table Expressions for clean, modular queries
+
 Window Functions — DENSE_RANK(), OVER(), PARTITION BY
+
 Aggregate Functions — SUM(), COUNT(), AVG(), MAX(), MIN()
+
 Conditional Aggregation — CASE WHEN inside aggregate functions
+
 Subqueries — For filtering with MIN / MAX / AVG
+
 Multi-table JOINs — Across fact and dimension tables
+
 Date Functions — MONTHNAME(), QUARTER(), DATE_ADD()
 
 
