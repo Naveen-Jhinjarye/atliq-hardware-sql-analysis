@@ -9,8 +9,71 @@ I solved 10 real-world ad hoc business requests using MySQL, covering product an
 AtliQ Hardwares noticed that they were not getting enough insights to make quick, smart, data-informed decisions. Tony Sharma (Data Analytics Director) designed a SQL challenge with 10 ad hoc business requests to test candidates' ability to extract meaningful insights from raw data.
 
 #### 🗄️ About the Data
-Database: gdb023
-TableDescriptiondim_customerCustomer details — name, market, region, channeldim_productProduct details — segment, division, categoryfact_gross_priceGross price per product per fiscal yearfact_manufacturing_costManufacturing cost per product per yearfact_pre_invoice_deductionsPre-invoice discount % per customer per yearfact_sales_monthlyMonthly sold quantity per product per customer
+
+This repository contains the schema description for the **gdb023** database.  
+It includes dimension and fact tables used for analytical and reporting purposes.
+
+---
+
+## 🗂️ Tables Overview
+
+### 🔹 Dimension Tables
+
+#### 1. `dim_customer`
+Contains customer-related details:
+- Customer Name
+- Market
+- Region
+- Channel
+
+---
+
+#### 2. `dim_product`
+Contains product-related details:
+- Segment
+- Division
+- Category
+
+---
+
+### 🔸 Fact Tables
+
+#### 3. `fact_gross_price`
+Stores gross price information:
+- Gross price per product
+- Fiscal year-wise data
+
+---
+
+#### 4. `fact_manufacturing_cost`
+Stores manufacturing cost details:
+- Cost per product
+- Year-wise data
+
+---
+
+#### 5. `fact_pre_invoice_deductions`
+Stores discount information:
+- Pre-invoice discount percentage
+- Customer-wise
+- Year-wise
+
+---
+
+#### 6. `fact_sales_monthly`
+Stores sales data:
+- Monthly sold quantity
+- Product-wise
+- Customer-wise
+
+---
+
+## 📌 Notes
+- Dimension tables provide descriptive attributes.
+- Fact tables store measurable metrics for analysis.
+- This schema follows a typical **star schema** design used in data warehousing.
+
+---
 
 
 ### 📋 Requests & Solutions
